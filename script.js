@@ -1,5 +1,8 @@
-//your JS code here. If required.
-document.getElementById("btnSelectRemove").addEventListener("click", function(){
-	const colorSelect = document.getElementById("colorSelect");
-	colorSelect.firstElementChild.remove();
-})
+function removeColor() {
+  var selectElement = document.getElementById("colorSelect");
+  var selectedValue = selectElement.value;
+
+  if (selectedValue) {
+    selectElement.remove(selectElement.selectedIndex);
+  }
+}
